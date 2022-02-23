@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class meuPrimeiroProgramaSerio {
+
+    public static void main(String[] args){
+
+        System.out.print("Hello, enter here as many numbers you want, type 0 if you want to stop the program: ");
+        Scanner sc = new Scanner(System.in);
+        int numeroAnterior = 0;
+        int numero = 0;
+        do { numero = sc.nextInt();
+            if (numero > numeroAnterior) {
+                numeroAnterior = numero;
+            }
+
+        } while (numero != 0);
+        System.out.print("The highest number you have typed was: " + numeroAnterior);
